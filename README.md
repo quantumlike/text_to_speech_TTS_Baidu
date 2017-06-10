@@ -1,3 +1,3 @@
 # voice_generation_TTS_test
 
-use Baidu voice text-to-speech API to generate voice. save it as voice.mp3 file. 
+Use Baidu voice text-to-speech API to generate voice. Save it as voice.mp3 file. 
