@@ -40,12 +40,12 @@ def callback():
     # text="hello world"
     # text=u'\u4f60\u597d'
 
-    # text = u'ÎÒÊÇîÚ¶°£¬ÎÒ×¡ÔÚÃÜĞª¸ù¡£ÎÒÏ²»¶´òÀºÇò¡£ÎÒÓĞÒ»¸öiphone¡£'
+    # text = u'æˆ‘æ˜¯æ¬²åŠ¨ï¼Œæˆ‘ä½åœ¨å¯†æ­‡æ ¹ã€‚æˆ‘å–œæ¬¢æ‰“ç¯®çƒã€‚æˆ‘æœ‰ä¸€ä¸ªiphoneã€‚'
     # text = text.encode('utf-8')
 
     lan='zh'
     cuid='YourCUID'
-    per='0'
+    per='0' # per:å‘éŸ³äººé€‰æ‹©, 0ä¸ºå¥³å£°ï¼Œ1ä¸ºç”·å£°ï¼Œ3ä¸ºæƒ…æ„Ÿåˆæˆ-åº¦é€é¥ï¼Œ4ä¸ºæƒ…æ„Ÿåˆæˆ-åº¦ä¸«ä¸«ï¼Œé»˜è®¤ä¸ºæ™®é€šå¥³å£°
     date={'tex':text,'lan':lan,'cuid':cuid,'ctp':1,'tok':token,'per':per}
     date_urlencode=urllib.parse.urlencode(date)
     # print(type(date_urlencode)) ##check date_urlencodede date type
