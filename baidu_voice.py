@@ -45,7 +45,7 @@ def callback():
 
     lan='zh'
     cuid='YourCUID'
-    per='0' # per:发音人选择, 0为女声，1为男声，3为情感合成-度逍遥，4为情感合成-度丫丫，默认为普通女声
+    per='0' # per: reader selection. 0 is boy, 1 is girl. 3 is boy with emotion. 4 is girl with emotion. default is 1. 1 and 3 is used in this project.
     date={'tex':text,'lan':lan,'cuid':cuid,'ctp':1,'tok':token,'per':per}
     date_urlencode=urllib.parse.urlencode(date)
     # print(type(date_urlencode)) ##check date_urlencodede date type
