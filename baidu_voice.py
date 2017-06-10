@@ -10,7 +10,6 @@ import wave
 import pyaudio
 import struct
 
-
 import codecs
 
 from tkinter import *
@@ -30,12 +29,9 @@ def callback():
     ServerUrl='http://tsn.baidu.com/text2audio'
     res = urllib.request.urlopen(url).read().decode('utf8')
 
-
     data = json.loads(res)
     token = data['access_token']    #got token
     # print('token get success:',token)
-
-
 
     # text="hello world"
     # text=u'\u4f60\u597d'
@@ -56,15 +52,15 @@ def callback():
     file.write(result)
     file.close()
 
-    os.startfile('voice.mp3')  # good
+    os.startfile('voice.mp3') 
     
-# Define a main() function that prints a little greeting.
+# Define a main() function.
 def main():
 
   root = Tk()
   root.withdraw() 
   mybutton = Button(root, text='select text file', command=callback())
-  mybutton.pack() # etc
+  mybutton.pack() 
 
   
 # This is the standard boilerplate that calls the main() function.
