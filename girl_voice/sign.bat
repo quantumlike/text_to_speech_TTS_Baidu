@@ -1,3 +1,5 @@
+rem create digital signature on .exe file.
+
 SET mypath=%~dp0
 echo %mypath:~0,-1%
 cd /d %mypath%
