@@ -23,6 +23,12 @@ def callback():
     text = f.read()
     f.close()
     
+    # text="hello world"
+    # text=u'\u4f60\u597d'
+
+    # text = u'我是欲动，我住在密歇根。我喜欢打篮球。我有一个iphone。'
+    # text = text.encode('utf-8')
+    
     Api_Key='5z2KZOQn51RoQiHDR84OKF2U'
     Secrect_Key='f1b1b5de59ece11c3353016b8a394fa9'
     url = 'https://openapi.baidu.com/oauth/2.0/token?grant_type=client_credentials&client_id='+Api_Key+'&client_secret='+Secrect_Key
@@ -32,12 +38,6 @@ def callback():
     data = json.loads(res)
     token = data['access_token']    #got token
     # print('token get success:',token)
-
-    # text="hello world"
-    # text=u'\u4f60\u597d'
-
-    # text = u'我是欲动，我住在密歇根。我喜欢打篮球。我有一个iphone。'
-    # text = text.encode('utf-8')
 
     lan='zh'
     cuid='YourCUID'
