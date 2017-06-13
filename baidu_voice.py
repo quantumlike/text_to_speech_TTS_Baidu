@@ -1,14 +1,14 @@
 # -*- coding=gb2312 -*-
 
-import urllib
+# import urllib
 import urllib.request
 import json
 import urllib.parse
-import base64
+# import base64
 import os
-import wave
-import pyaudio
-import struct
+# import wave
+# import pyaudio
+# import struct
 
 import codecs
 
