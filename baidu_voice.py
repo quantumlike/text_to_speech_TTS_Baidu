@@ -42,10 +42,10 @@ def callback():
     lan='zh'
     cuid='YourCUID'
     per='0' # per: reader selection. 0 is boy, 1 is girl. 3 is boy with emotion. 4 is girl with emotion. default is 1. 1 and 3 is used in this project.
-    date={'tex':text,'lan':lan,'cuid':cuid,'ctp':1,'tok':token,'per':per}
-    date_urlencode=urllib.parse.urlencode(date)
-    # print(type(date_urlencode)) ##check date_urlencodede date type
-    r=urllib.request.urlopen(ServerUrl,str.encode(date_urlencode))
+    data={'tex':text,'lan':lan,'cuid':cuid,'ctp':1,'tok':token,'per':per}
+    data_urlencode=urllib.parse.urlencode(datea)
+    # print(type(data_urlencode)) ##check data_urlencodede data type
+    r=urllib.request.urlopen(ServerUrl,str.encode(data_urlencode))
     # print(r.getcode())
     result=r.read()
     file=open(r"voice.mp3","wb")
