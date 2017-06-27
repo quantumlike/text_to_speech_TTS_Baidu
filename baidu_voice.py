@@ -35,17 +35,17 @@ def callback():
     ServerUrl='http://tsn.baidu.com/text2audio'
     res = urllib.request.urlopen(url).read().decode('utf8')
 
-    data = json.loads(res)
-    token = data['access_token']    #got token
+    data1 = json.loads(res)
+    token = data1['access_token']    #got token
     # print('token get success:',token)
 
     lan='zh'
     cuid='YourCUID'
     per='0' # per: reader selection. 0 is boy, 1 is girl. 3 is boy with emotion. 4 is girl with emotion. default is 1. 1 and 3 is used in this project.
-    data={'tex':text,'lan':lan,'cuid':cuid,'ctp':1,'tok':token,'per':per}
-    data_urlencode=urllib.parse.urlencode(datea)
-    # print(type(data_urlencode)) ##check data_urlencodede data type
-    r=urllib.request.urlopen(ServerUrl,str.encode(data_urlencode))
+    data2={'tex':text,'lan':lan,'cuid':cuid,'ctp':1,'tok':token,'per':per}
+    data2_urlencode=urllib.parse.urlencode(data2)
+    # print(type(data2_urlencode)) ##check data_urlencodede data2 type
+    r=urllib.request.urlopen(ServerUrl,str.encode(data2_urlencode))
     # print(r.getcode())
     result=r.read()
     file=open(r"voice.mp3","wb")
