@@ -1,4 +1,4 @@
-# -*- coding=utf-8 -*-
+# coding=utf-8
 # Python 3.5.3
 
 # import urllib
