@@ -30,9 +30,9 @@ def callback():
     # text = u'我是欲动，我住在密歇根。我喜欢打篮球。我有一个iphone。'
     # text = text.encode('utf-8')
     
-    Api_Key='5z2KZOQn51RoQiHDR84OKF2U'
-    Secrect_Key='f1b1b5de59ece11c3353016b8a394fa9'
-    url = 'https://openapi.baidu.com/oauth/2.0/token?grant_type=client_credentials&client_id='+Api_Key+'&client_secret='+Secrect_Key
+    Api_Key='your_api_key'
+    Secret_Key='your_secret_key'
+    url = 'https://openapi.baidu.com/oauth/2.0/token?grant_type=client_credentials&client_id='+Api_Key+'&client_secret='+Secret_Key
     ServerUrl='http://tsn.baidu.com/text2audio'
     res = urllib.request.urlopen(url).read().decode('utf8')
 
